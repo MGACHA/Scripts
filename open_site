@@ -1,0 +1,48 @@
+# List of specific values for $i
+
+#Systems
+$Client = "xxx"
+
+$Values = @(
+113123,
+113159,
+113158,
+113156)
+
+foreach ($i in $Values) {
+    $f = "https://sys.test.co.uk/app/#/$Client/history/$i"
+    $f
+    Start-Process $f
+}
+
+
+#UAT
+$Client = "xxx"
+
+$Values = @(
+113123,
+113159,
+113158,
+113156)
+
+foreach ($i in $Values) {
+    $f = "https://www.test.co.uk/app/#/$Client/history/$i"
+    $f
+    Start-Process $f
+}
+
+
+#PROD
+$Client = "xxx"
+
+$Values = @(
+113123,
+113159,
+113158,
+113156)
+
+foreach ($i in $Values) {
+    $f = "https://www.test.com/app/#/$Client/history/$i"
+    $f
+    Start-Process $f
+}
